@@ -21,6 +21,9 @@
     border-style: none;
 }
 
+/* body {
+    height: 100%;
+} */
 
 body main {
     width: 100%;
@@ -93,11 +96,20 @@ h6 {
 .card-style {
     border-radius: 10px 10px 10px 10px;
     border-style: none;
+    margin-bottom: 180px;
+}
+
+@media (max-width:576px) {
+    .card-style {
+    margin-bottom: 0px;
+    }
 }
 
 .footer-style {
     background-color: rgb(35, 73, 107);
-    height: 50px;
+    height: 55px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .iconos-footer {
