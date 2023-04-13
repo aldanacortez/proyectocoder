@@ -32,6 +32,7 @@ body main {
 
 .navbar-bg {
     background-color: rgb(35, 73, 107);
+    padding-right: 2rem;
 }
 
 .nav-link {
