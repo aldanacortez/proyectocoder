@@ -21,10 +21,6 @@
     border-style: none;
 }
 
-/* body {
-    height: 100%;
-} */
-
 body main {
     width: 100%;
     min-height: 100vh;
@@ -118,4 +114,14 @@ h6 {
 
 .btn-circle {
     border-radius: 25px;
+}
+
+.footer-top {
+    margin-top: 0px;
+}
+
+@media (max-width:576px) {
+    .footer-top {
+        margin-top: 100px !important;
+    }
 }
