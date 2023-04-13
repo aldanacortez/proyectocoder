@@ -94,7 +94,7 @@ h6 {
 
 @media (max-width:576px) {
     .texto-seccion {
-    font-size: 1.25rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -106,7 +106,7 @@ h6 {
 
 @media (max-width:576px) {
     .card-style {
-    margin-bottom: 0px;
+        margin-bottom: 0px;
     }
 }
 
