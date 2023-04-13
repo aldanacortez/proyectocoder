@@ -30,6 +30,10 @@ body main {
     min-height: 100vh;
 }
 
+.navbar-bg {
+    background-color: rgb(35, 73, 107);
+}
+
 .nav-link {
     color: white;
 }
