@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "poppins", sans-serif;
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.collapse {
+    background-color: rgb(35, 73, 107);
+    width: 100%;
+}
+
+.color-principal {
+    color: rgb(35, 73, 107);
+}
+
+.icono-menu {
+    border-style: none;
+}
+
+
+body main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.544);
+}
+
+.nav-link:active {
+    color: rgba(255, 255, 255, 0.544);
+}
+
+.nav-bg {
+    background-color: rgb(35, 73, 107);
+    height: 80px;
+}
+
+.bg-azul {
+    background-color: rgb(35, 73, 107);
+}
+
+.bg-azul:hover {
+    background-color: rgba(35, 73, 107, 0.479);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "poppins";
+    color: rgb(21, 20, 20);
+}
+
+.text-link {
+    color: white;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(35, 73, 107);
+}
+
+@media (max-width:576px) {
+    .titulo-seccion {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+.texto-seccion {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media (max-width:576px) {
+    .texto-seccion {
+    font-size: 1.25rem;
+    }
+}
+
+.card-style {
+    border-radius: 10px 10px 10px 10px;
+    border-style: none;
+}
+
+.footer-style {
+    background-color: rgb(35, 73, 107);
+    height: 50px;
+}
+
+.iconos-footer {
+    font-size: 20px;
+}
+
+.btn-circle {
+    border-radius: 25px;
+}
