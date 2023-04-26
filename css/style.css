@@ -1,3 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.card {
+  margin-bottom: 180px;
+}
+@media (max-width: 900px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+.card h3 {
+  font-family: "poppins", sans serif;
+}
+.card p {
+  font-family: "poppins", sans serif;
+  width: 280px;
+}
+.card button {
+  background-color: rgb(35, 73, 107);
+  color: white;
+  border-radius: 25px;
+}
+.card button:hover {
+  color: white;
+  background-color: #D6B6F1;
+}
+.card img {
+  height: 200px;
+}
+
+button {
+  height: 50px;
+  background-color: rgb(35, 73, 107);
+  border-radius: 25px;
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: #D6B6F1;
+}
+
 header {
   background-color: rgb(35, 73, 107);
   height: 80px;
@@ -19,29 +64,6 @@ main h2 {
   margin-bottom: 2rem;
 }
 
-section .card {
-  margin-bottom: 100px;
-}
-section .card h3 {
-  font-family: "poppins", sans serif;
-}
-section .card p {
-  font-family: "poppins", sans serif;
-  width: 280px;
-}
-section .card button {
-  background-color: rgb(35, 73, 107);
-  color: white;
-}
-section .card button:hover {
-  color: white;
-  background-color: rgb(71, 111, 146);
-}
-section .card img {
-  height: 150px;
-  width: 200px;
-}
-
 section .titulo-seccion {
   font-family: "poppins", sans serif;
   color: rgb(35, 73, 107);
@@ -60,6 +82,18 @@ section .texto-seccion {
 .footer a {
   color: white;
   font-size: 1.25rem;
+}
+
+section img {
+  height: 500px;
+}
+@media (max-width: 900px) {
+  section img {
+    height: 300px;
+  }
+}
+section section form input {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+button {
+    height: 50px;
+    background-color: $color-primario;
+    border-radius: 25px;
+    border: none;
+    color: white;
+
+    &:hover {
+        background-color: $hover;
+    }
+}

@@ -1,5 +1,11 @@
 .card {
-    margin-bottom: 100px;
+    margin-bottom: 180px;
+
+    @media(max-width:900px) {
+        & {
+            margin-bottom: 20px;            
+        }
+    }
 
     h3 {
         font-family: $fuente-principal;
@@ -13,6 +19,7 @@
     button {
         background-color: $color-primario;
         color: white;
+        border-radius: 25px;
 
         &:hover {
             color: white;
@@ -21,7 +28,9 @@
     }
 
     img {
-        height: 150px;
-        width: 200px;
+        // height: 150px;
+        // width: 175px;
+        height: 200px;
+        
     }
 }

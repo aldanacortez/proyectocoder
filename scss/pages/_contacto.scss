@@ -1,0 +1,26 @@
+section {
+    img {
+        height: 500px;
+
+        @media (max-width:900px) {
+            & {
+                height: 300px;
+            }
+        }
+    }
+
+    section form input {
+        box-shadow: none;
+    }
+}
+
+// form 
+// {
+// input {
+//     box-shadow: none !important;
+
+//     textarea {
+//         box-shadow: none !important;
+//     }
+// }
+// }
