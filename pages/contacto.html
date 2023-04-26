@@ -8,6 +8,8 @@
     <title>CODE Diseño y Desarrollo Web | Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
 
     <meta name="description"
@@ -18,10 +20,11 @@
 <body>
 
     <!-- NAV -->
-    <header class="navbar navbar-expand-lg nav-bg">
+    <header class="navbar navbar-expand-lg nav-bg" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="500">
         <div class="container-fluid">
             <a class="navbar-brand text-light mx-5" href="./index.html">
-                <img src="../img/logo-code.png">
+                <img src="../img/logo-code.jpg" alt="Logo de la empresa.">
             </a>
             <button class="navbar-toggler icono-menu mx-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -54,20 +57,20 @@
     <section>
         <div class="container" style="height: 100vh;">
             <div class="row justify-content-center">
-                <h2 class="text-center mt-5">DEJÁNOS TU CONSULTA</h2>
-                <p class="col-10 col-md-12 text-center">¡Escribinos para que un asesor se pueda poner en contacto
+                <h2 class="text-center mt-5" data-aos="zoom-in" data-aos-duration="1500">DEJÁNOS TU CONSULTA</h2>
+                <p class="col-10 col-md-12 text-center" data-aos="zoom-in" data-aos-duration="1300">¡Escribinos para que un asesor se pueda poner en contacto
                     contigo!</p>
             </div>
             <div class="d-flex flex-column flex-md-row align-items-center">
-                <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <div class="col-12 col-md-6 mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="1300">
                     <img class="" src="../img/img-contacto.png">
                 </div>
                 <div class="col-10 col-md-5 caja">
                     <form>
-                        <div class="mt-4">
-                            <input type="name" class="form-control mb-3 mb-md-2" id="" aria-describedby=""
+                        <div class="mt-4" data-aos="fade-left" data-aos-duration="1500">
+                            <input type="name" class="form-control mb-3 mb-md-2" id="" aria-describedby="nameayuda"
                                 placeholder="Name">
-                            <input type="email" class="form-control mb-3 mb-md-2" id="" aria-describedby=""
+                            <input type="email" class="form-control mb-3 mb-md-2" id="" aria-describedby="emailayuda"
                                 placeholder="Email">
                             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje"
                                 rows="7"></textarea>
@@ -96,6 +99,11 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5706832b8a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -35,6 +35,12 @@ section {
     }
 }
 
+section {
+    h2 {
+        color: $color-secundario;
+    }
+}
+
 .footer {
     background-color: $color-primario;
     margin-top: 2rem;

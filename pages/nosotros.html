@@ -8,6 +8,8 @@
     <title>CODE Diseño y Desarrollo Web | Nosotros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
 
     <meta name="description"
@@ -21,7 +23,7 @@
     <header class="navbar navbar-expand-lg nav-bg">
         <div class="container-fluid">
             <h1><a class="navbar-brand text-light mx-5" href="./index.html">
-                    <img src="../img/logo-code.png">
+                    <img src="../img/logo-code.jpg" alt="Logo de la empresa.">
                 </a></h1>
 
             <button class="navbar-toggler icono-menu mx-3" type="button" data-bs-toggle="collapse"
@@ -51,10 +53,17 @@
         </div>
     </header>
 
-    <section>
+    <section class="nosotros">
         <div class="container d-flex">
-            <div class="row">
-                <div class="card col-6">
+            <div class="row justify-content-center justif-content-lg-start" data-aos="fade-right" data-aos-duration="1300">
+
+                <h2 class="text-center text-md-start text-xl-start mt-5">
+                    CONOCENOS</h2>
+                <p class="col-10 col-md-12 text-center text-md-start text-xl-start">Somos un equipo de
+                    expertos en el desarrollo de soluciones tecnológicas.
+                </p>
+                <div class="col-10 col-md-6 col-xl-6 text-center text-md-start text-xl-start">
+                    <h2 class="mt-5 mb-3">ACERCA DE CODE></h2>
                     <p>
                         Somos una empresa desarrolladora web que se especializa en crear soluciones digitales para
                         empresas
@@ -62,21 +71,13 @@
                         proporcionar soluciones innovadoras y personalizadas que se ajusten a las necesidades de
                         nuestros
                         clientes.
-
-                        Nos enorgullece ofrecer un servicio de alta calidad que se enfoca en brindar una experiencia
-                        única y
-                        satisfactoria a nuestros clientes. Nos tomamos el tiempo para entender las necesidades de cada
-                        cliente y nos esforzamos por crear soluciones que superen sus expectativas.
-
-                        Nuestra experiencia en el desarrollo web nos permite ofrecer una amplia gama de servicios que
-                        incluyen diseño web, desarrollo de aplicaciones móviles, comercio electrónico, marketing
-                        digital,
-                        optimización de motores de búsqueda y mucho más. Trabajamos con las últimas tecnologías y
-                        estamos
-                        siempre actualizados para garantizar que nuestros clientes obtengan los mejores resultados.
                     </p>
+                    <a href="/pages/contacto.html" aria-label="Comunicarse con la empresa." >
+                        <button class="col-12 col-lg-10 btn-col text-link mt-3 mb-5 mb-lg-0" data-aos="fade-right"
+                            data-aos-duration="1500"> CONTACTO</button>
+                    </a>
                 </div>
-                <div class="col-6">
+                <div class="col-10 col-md-6 col-xl-6" data-aos="fade-down-left" data-aos-duration="1300">
                     <img src="../img/nosotros.png">
                 </div>
             </div>
@@ -103,6 +104,11 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5706832b8a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
