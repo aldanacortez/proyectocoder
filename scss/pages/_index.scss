@@ -1,0 +1,48 @@
+header {
+    background-color: $color-primario;
+    height: 80px;
+
+    ul {
+        font-family: $fuente-principal;
+        align-items: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+main {
+    height: 100vh;
+
+    h2 {
+        color: $color-primario;
+        margin-bottom: 2.0rem;
+    }
+}
+
+section {
+    .titulo-seccion {
+        font-family: $fuente-principal;
+        color: $color-primario;
+    }
+
+    .texto-seccion {
+        font-family: $fuente-principal;
+        font-size: 1.25rem;
+    }
+}
+
+.footer {
+    background-color: $color-primario;
+    margin-top: 2rem;
+    height: 70px;
+    margin-top: 50px;
+
+    a {
+        color: white;
+        font-size: 1.25rem;
+    }
+}

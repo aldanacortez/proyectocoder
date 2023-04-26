@@ -1,0 +1,27 @@
+.card {
+    margin-bottom: 100px;
+
+    h3 {
+        font-family: $fuente-principal;
+    }
+
+    p {
+        font-family: $fuente-principal;
+        width: 280px;
+    }
+
+    button {
+        background-color: $color-primario;
+        color: white;
+
+        &:hover {
+            color: white;
+            background-color: $hover;
+        }
+    }
+
+    img {
+        height: 150px;
+        width: 200px;
+    }
+}

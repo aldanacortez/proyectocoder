@@ -1,127 +1,65 @@
-@font-face {
-    font-family: "poppins", sans-serif;
-    src: url("../fonts/Poppins/Poppins-Light.ttf");
+header {
+  background-color: rgb(35, 73, 107);
+  height: 80px;
+}
+header ul {
+  font-family: "poppins", sans serif;
+  align-items: center;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+main {
+  height: 100vh;
+}
+main h2 {
+  color: rgb(35, 73, 107);
+  margin-bottom: 2rem;
 }
 
-.collapse {
-    background-color: rgb(35, 73, 107);
-    width: 100%;
+section .card {
+  margin-bottom: 100px;
+}
+section .card h3 {
+  font-family: "poppins", sans serif;
+}
+section .card p {
+  font-family: "poppins", sans serif;
+  width: 280px;
+}
+section .card button {
+  background-color: rgb(35, 73, 107);
+  color: white;
+}
+section .card button:hover {
+  color: white;
+  background-color: rgb(71, 111, 146);
+}
+section .card img {
+  height: 150px;
+  width: 200px;
 }
 
-.color-principal {
-    color: rgb(35, 73, 107);
+section .titulo-seccion {
+  font-family: "poppins", sans serif;
+  color: rgb(35, 73, 107);
+}
+section .texto-seccion {
+  font-family: "poppins", sans serif;
+  font-size: 1.25rem;
 }
 
-.icono-menu {
-    border-style: none;
+.footer {
+  background-color: rgb(35, 73, 107);
+  margin-top: 2rem;
+  height: 70px;
+  margin-top: 50px;
+}
+.footer a {
+  color: white;
+  font-size: 1.25rem;
 }
 
-body main {
-    width: 100%;
-    min-height: 100vh;
-}
-
-.nav-link {
-    color: white;
-}
-
-.nav-link:hover {
-    color: rgba(255, 255, 255, 0.544);
-}
-
-.nav-link:active {
-    color: rgba(255, 255, 255, 0.544);
-}
-
-.nav-bg {
-    background-color: rgb(35, 73, 107);
-    height: 80px;
-}
-
-.bg-azul {
-    background-color: rgb(35, 73, 107);
-}
-
-.bg-azul:hover {
-    background-color: rgba(35, 73, 107, 0.479);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "poppins";
-    color: rgb(21, 20, 20);
-}
-
-.text-link {
-    color: white;
-}
-
-.titulo-seccion {
-    font-size: 2rem;
-    font-weight: 400;
-    color: rgb(35, 73, 107);
-}
-
-@media (max-width:576px) {
-    .titulo-seccion {
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-}
-
-.texto-seccion {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-@media (max-width:576px) {
-    .texto-seccion {
-        font-size: 1.25rem;
-    }
-}
-
-.card-style {
-    border-radius: 10px 10px 10px 10px;
-    border-style: none;
-    margin-bottom: 180px;
-}
-
-@media (max-width:576px) {
-    .card-style {
-        margin-bottom: 0px;
-    }
-}
-
-.footer-style {
-    background-color: rgb(35, 73, 107);
-    height: 55px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.iconos-footer {
-    font-size: 20px;
-}
-
-.btn-circle {
-    border-radius: 25px;
-}
-
-.footer-top {
-    margin-top: 0px;
-}
-
-@media (max-width:576px) {
-    .footer-top {
-        margin-top: 100px !important;
-    }
-}
+/*# sourceMappingURL=style.css.map */
