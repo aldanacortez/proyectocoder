@@ -43,6 +43,12 @@ button:hover {
   background-color: #D6B6F1;
 }
 
+.servicio .cardservice {
+  border-width: 2px;
+  background-color: red !important;
+  border-style: solid;
+}
+
 header {
   background-color: rgb(35, 73, 107);
   height: 80px;
