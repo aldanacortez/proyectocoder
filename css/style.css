@@ -15,7 +15,7 @@
 .card h3 {
   font-family: "poppins", sans serif;
 }
-.card p {
+.card .card-text {
   font-family: "poppins", sans serif;
   width: 280px;
 }
@@ -43,21 +43,26 @@ button:hover {
   background-color: #D6B6F1;
 }
 
-.servicio .cardservice {
-  border-width: 2px;
-  background-color: red !important;
-  border-style: solid;
-}
-
 header {
   background-color: rgb(35, 73, 107);
   height: 80px;
 }
-header ul {
+@media (max-width: 986px) {
+  header nav {
+    background-color: #D6B6F1;
+    margin-top: 23px;
+  }
+}
+header nav ul {
   font-family: "poppins", sans serif;
   align-items: center;
 }
-header ul a {
+@media (max-width: 986px) {
+  header nav ul li {
+    margin-bottom: 5px;
+  }
+}
+header nav ul li a {
   color: white;
   text-decoration: none;
 }
@@ -77,6 +82,10 @@ section .titulo-seccion {
 section .texto-seccion {
   font-family: "poppins", sans serif;
   font-size: 1.25rem;
+}
+
+.z-ind {
+  z-index: -1 !important;
 }
 
 section h2 {
@@ -104,6 +113,15 @@ section h2 {
   .nosotros img {
     max-width: 100%;
   }
+}
+
+.cardservicio {
+  background-color: #D6B6F1;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardservicio p {
+  color: white;
 }
 
 section img {

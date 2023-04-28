@@ -2,13 +2,28 @@ header {
     background-color: $color-primario;
     height: 80px;
 
-    ul {
-        font-family: $fuente-principal;
-        align-items: center;
+    nav {
+        @media(max-width:986px) {
+            & {
+                background-color: $color-secundario;
+                margin-top: 23px
+            }
+        }
 
-        a {
-            color: white;
-            text-decoration: none;
+        ul {
+            font-family: $fuente-principal;
+            align-items: center;
+
+            li {
+                @media(max-width:986px) {
+                    margin-bottom: 5px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
@@ -33,6 +48,10 @@ section {
         font-family: $fuente-principal;
         font-size: 1.25rem;
     }
+}
+
+.z-ind {
+    z-index: -1 !important;
 }
 
 section {
