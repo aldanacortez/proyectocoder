@@ -4,6 +4,10 @@
   font-family: "poppins", sans-serif;
 }
 
+.overflow-hidden {
+  overflow-x: hidden;
+}
+
 .card {
   margin-bottom: 180px;
 }
@@ -122,6 +126,16 @@ section h2 {
 }
 .cardservicio p {
   color: white;
+}
+
+.portfolio-marcas {
+  height: 180px;
+  width: 180px;
+  border-radius: 150px;
+}
+
+.portada-porftolio {
+  height: 100vh !important;
 }
 
 section img {
