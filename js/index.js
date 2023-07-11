@@ -122,6 +122,8 @@
 
 // alert("Gracias por su visita");
 
+const serviciosTodos = document.getElementById("serviciosTodos")
+
 const servicios = [
   {
     id: 1,
@@ -141,10 +143,12 @@ const servicios = [
 ];
 
 servicios.forEach((element) => {
-  let.content = document.createElement("div");
+  let content = document.createElement("div");
   content.innerHTML = `
     <img src="${servicios.img}">
     <h1>"${servicios.titulo}</h1>
     <p>"${servicios.descripcion}"</p>
     `;
+
+    serviciosTodos.append(content);
 });
