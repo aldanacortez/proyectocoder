@@ -121,3 +121,30 @@
 // }
 
 // alert("Gracias por su visita");
+
+const servicios = [
+  {
+    id: 1,
+    nombre: "Desarrollo Web",
+    // img:
+  },
+  {
+    id: 2,
+    nombre: "Marketing",
+    // img:
+  },
+  {
+    id: 3,
+    nombre: "Diseño",
+    // img:
+  },
+];
+
+servicios.forEach((element) => {
+  let.content = document.createElement("div");
+  content.innerHTML = `
+    <img src="${servicios.img}">
+    <h1>"${servicios.titulo}</h1>
+    <p>"${servicios.descripcion}"</p>
+    `;
+});
