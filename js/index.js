@@ -127,22 +127,22 @@ const serviciosTodos = document.getElementById("serviciosTodos");
 const servicios = [
   {
     id: 1,
-    img: "https://www.itconsultors.com/images/blog/web-dev.jpg",
+    img: "./img/desarrollo.jpg",
     servicio: "Desarrollo Web",
     descripcion:
       "Nuestro equipo experto en desarrollo trabaja en colaboración vos para crear una página web que refleje la esencia de tu negocio",
   },
   {
     id: 2,
-    // img:
+    img: "./img/marketing.jpg",
     servicio: "Marketing",
     descripcion:
       "Te ofrecemos estrategias efectivas y personalizadas para ayudarte a llegar a tus clientes potenciales y aumentar tus conversiones",
   },
   {
     id: 3,
-    // img:
-    servicio: "Diseño",
+    img: "./img/design.jpg",
+    servicio: "design",
     descripcion:
       "Desde las paletas hasta el diseño de la interfaz de usuario, nuestro objetivo es crear una página web atractiva y fácil que mejore tu presencia en línea",
   },
@@ -152,10 +152,11 @@ let carrito = [];
 
 servicios.forEach((servicio) => {
   let content = document.createElement("div");
+  content.className = "card";
   content.innerHTML = `
-    <img src=${servicio.img}>
-    <h1>${servicio.servicio}</h1>
-    <p>${servicio.descripcion}</p>
+    <img src=${servicio.img} class= "card-img-top mt-2">
+    <h1 class="text-center">${servicio.servicio}</h1>
+    <p class= "text-center">${servicio.descripcion}</p>
     `;
 
   serviciosTodos.append(content);
@@ -163,7 +164,5 @@ servicios.forEach((servicio) => {
   let info = document.createElement("button");
   info.innerText = "info";
 
-  content.append(info)
-
- 
+  content.append(info);
 });
