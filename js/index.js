@@ -128,7 +128,7 @@ const servicios = [
   {
     id: 1,
     img: "./img/desarrollo.jpg",
-    servicio: "Desarrollo Web",
+    servicio: "Desarrollo",
     descripcion:
       "Nuestro equipo experto en desarrollo trabaja en colaboración vos para crear una página web que refleje la esencia de tu negocio",
   },
@@ -142,27 +142,26 @@ const servicios = [
   {
     id: 3,
     img: "./img/design.jpg",
-    servicio: "design",
+    servicio: "Diseño",
     descripcion:
       "Desde las paletas hasta el diseño de la interfaz de usuario, nuestro objetivo es crear una página web atractiva y fácil que mejore tu presencia en línea",
   },
 ];
 
-let carrito = [];
 
 servicios.forEach((servicio) => {
   let content = document.createElement("div");
-  content.className = "card";
+  content.className = "col-10 col-lg-3 card shadow-lg card-style align-items-center mx-4";
   content.innerHTML = `
-    <img src=${servicio.img} class= "card-img-top mt-2">
+    <img src=${servicio.img} class="card-img-top mt-2">
     <h1 class="text-center">${servicio.servicio}</h1>
-    <p class= "text-center">${servicio.descripcion}</p>
+    <p class="text-center card-text pb-3">${servicio.descripcion}</p>
     `;
 
   serviciosTodos.append(content);
 
   let info = document.createElement("button");
-  info.innerText = "info";
+  info.innerText = "Contratar";
 
   content.append(info);
 });

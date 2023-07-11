@@ -27,6 +27,8 @@
   background-color: rgb(35, 73, 107);
   color: white;
   border-radius: 25px;
+  width: 250px;
+  margin-bottom: 30px;
 }
 .card button:hover {
   color: white;
@@ -150,4 +152,7 @@ section section form input {
   box-shadow: none;
 }
 
+.flex {
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
