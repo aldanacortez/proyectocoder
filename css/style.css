@@ -163,5 +163,48 @@ section section form input {
   }
 }
 
+.no-deco {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+  box-shadow: 3px -5px 66px -34px rgba(0,0,0,1);
+
+  ;
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-content {
+  margin-left: 10%;
+}
 
 /*# sourceMappingURL=style.css.map */

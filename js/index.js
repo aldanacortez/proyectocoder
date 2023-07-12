@@ -134,7 +134,7 @@ servicios.forEach((servicio) => {
     "col-10 col-lg-3 card shadow-lg card-style align-items-center mx-4";
   content.innerHTML = `
     <img src=${servicio.img} class="card-img-top mt-2">
-    <h1 class="text-center">${servicio.servicio}</h1>
+    <h2 class="text-center">${servicio.servicio}</h2>
     <p class="text-center card-text pb-3">${servicio.descripcion}</p>
     `;
 
@@ -157,29 +157,28 @@ servicios.forEach((servicio) => {
 });
 
 verCarrito.addEventListener("click", () => {
-    const modalHeader = document.createElement("div");
-    modalHeader.className = "modal-header";
-    modalHeader.innerHTML = `
-    <h1 class="modal-header-title">Carrito</h1>
+  const modalHeader = document.createElement("div");
+  modalHeader.className = "modal-header";
+  modalHeader.innerHTML = `
+    <h2 class="modal-header-title">Carrito</h2>
     `;
-    modalContainer.append(modalHeader);
+  modalContainer.append(modalHeader);
 
-    const modalButton = document.createElement("h1");
-    modalButton.innerText = "x";
-    modalButton.className= "modal-header-button";
+  const modalButton = document.createElement("p");
+  modalButton.innerText = "x";
+  modalButton.className = "modal-header-button";
 
-    modalHeader.append(modalButton);
+  modalHeader.append(modalButton);
 
-    carrito.forEach((servicio) => {
-        let carritoContent = document.createElement("div");
-        carritoContent.className = "modal-content";
-        carritoContent.innerHTML = `
-        <img src="${servicio.img}">
-        <h1>${servicio.servicio}</h1>
-        <p>${servicio.descripcion}"</p>
+  carrito.forEach((servicio) => {
+    let carritoContent = document.createElement("div");
+    carritoContent.className = "modal-content";
+    carritoContent.innerHTML = `
+        <img class="w-25" src="${servicio.img}">
+        <h3 class="ml-5">${servicio.servicio}</h3>
+        <p class="">${servicio.descripcion}"</p>
         `;
 
-        modalContainer.append(carritoContent);
-    })
-
+    modalContainer.append(carritoContent);
+  });
 });
