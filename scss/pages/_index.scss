@@ -26,7 +26,6 @@ header {
             }
         }
     }
-
 }
 
 main {
@@ -70,4 +69,8 @@ section {
         color: white;
         font-size: 1.25rem;
     }
+}
+
+.no-deco {
+    text-decoration: none !important;
 }

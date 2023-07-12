@@ -123,6 +123,8 @@
 // alert("Gracias por su visita");
 
 const serviciosTodos = document.getElementById("serviciosTodos");
+const verCarrito = document.getElementById("carrito");
+const modalContainer = document.getElementById("modal-container");
 
 let carrito = [];
 
@@ -152,4 +154,32 @@ servicios.forEach((servicio) => {
     });
   });
   console.log(carrito);
+});
+
+verCarrito.addEventListener("click", () => {
+    const modalHeader = document.createElement("div");
+    modalHeader.className = "modal-header";
+    modalHeader.innerHTML = `
+    <h1 class="modal-header-title">Carrito</h1>
+    `;
+    modalContainer.append(modalHeader);
+
+    const modalButton = document.createElement("h1");
+    modalButton.innerText = "x";
+    modalButton.className= "modal-header-button";
+
+    modalHeader.append(modalButton);
+
+    carrito.forEach((servicio) => {
+        let carritoContent = document.createElement("div");
+        carritoContent.className = "modal-content";
+        carritoContent.innerHTML = `
+        <img src="${servicio.img}">
+        <h1>${servicio.servicio}</h1>
+        <p>${servicio.descripcion}"</p>
+        `;
+
+        modalContainer.append(carritoContent);
+    })
+
 });
