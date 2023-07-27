@@ -147,12 +147,16 @@ servicios.forEach((servicio) => {
 
   agregarAlCarrito.addEventListener("click", () => {
 
+    // BIBLIOTECA
+
     Swal.fire({
-      title: '¡Agregado!',
-      text: 'Producto agregado al carrito',
-      icon: 'success',
-      confirmButtonText: 'OK'
-    })
+      title: "¡Agregado!",
+      text: "Producto agregado al carrito",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+
+    // FIN LIBRERIA
 
     carrito.push({
       id: servicio.id,
@@ -160,7 +164,6 @@ servicios.forEach((servicio) => {
       servicio: servicio.servicio,
       descripcion: servicio.descripcion,
     });
-
 
     // LOCAL STORAGE
 
@@ -180,7 +183,7 @@ verCarrito.addEventListener("click", () => {
   modalContainer.append(modalHeader);
 
   const modalButton = document.createElement("p");
-  modalButton.innerText = "x";
+  modalButton.innerText = "x"; 
   modalButton.className = "modal-header-button";
 
   modalHeader.append(modalButton);

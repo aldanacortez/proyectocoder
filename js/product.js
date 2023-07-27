@@ -21,3 +21,11 @@ const servicios = [
         "Desde las paletas hasta el diseño de la interfaz de usuario, nuestro objetivo es crear una página web atractiva y fácil que mejore tu presencia en línea",
     },
   ];
+
+  // FECTH & JASON
+
+  fetch("./js/productos.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
