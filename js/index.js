@@ -140,18 +140,33 @@ servicios.forEach((servicio) => {
 
   serviciosTodos.append(content);
 
-  let contratar = document.createElement("button");
-  contratar.innerText = "Contratar";
+  let agregarAlCarrito = document.createElement("button");
+  agregarAlCarrito.innerText = "Contratar";
 
-  content.append(contratar);
+  content.append(agregarAlCarrito);
 
-  contratar.addEventListener("click", () => {
+  agregarAlCarrito.addEventListener("click", () => {
+
+    Swal.fire({
+      title: '¡Agregado!',
+      text: 'Producto agregado al carrito',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    })
+
     carrito.push({
       id: servicio.id,
       img: servicio.img,
       servicio: servicio.servicio,
       descripcion: servicio.descripcion,
     });
+
+
+    // LOCAL STORAGE
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(carrito));
+
+    // FIN LOCAL STORAGE
   });
   console.log(carrito);
 });
@@ -176,7 +191,6 @@ verCarrito.addEventListener("click", () => {
     carritoContent.innerHTML = `
         <img class="w-25" src="${servicio.img}">
         <h3 class="ml-5">${servicio.servicio}</h3>
-        <p class="">${servicio.descripcion}"</p>
         `;
 
     modalContainer.append(carritoContent);
