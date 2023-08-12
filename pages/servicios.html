@@ -21,17 +21,21 @@
 
     <!-- NAV -->
     <header class="navbar navbar-expand-lg nav-bg">
+
         <div class="container-fluid">
+
             <h1>
                 <a class="navbar-brand text-light mx-5" href="../index.html">
                     <img src="../img/logo-code.jpg" alt="Logo de la empresa.">
                 </a>
             </h1>
+
             <button class="navbar-toggler icono-menu mx-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation" style="box-shadow: none;">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <nav class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto mt-4 mt-lg-0 mb-3 mb-md-0 mb-xl-0">
                     <li class="nav-item mx-3 text-center">
@@ -44,73 +48,81 @@
                         <a class="px-5 px-lg-0" href="../pages/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item mx-3 text-center">
-                        <a class="px-5 px-lg-0" href="../pages/portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item mx-3 text-center">
                         <a class="px-5 px-lg-0 pb-3" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
+            <ul>
+                <a id="carrito" class="fa-solid fa-cart-shopping iconos-footer mx-3 no-deco text-light">
+                    <span class="cantidad">0</span>
+                </a>
+            </ul>
         </div>
+
     </header>
 
     <section>
-        <div class="container z-ind overflow-hidden">
 
-            <div class="row justify-content-center justify-content-md-start justify-content-lg-start">
-                <h2 class="text-center mt-5 z-ind" data-aos="zoom-in" data-aos-duration="1500">¿QUÉ SERVICIOS OFRECEMOS?
-                </h2>
-                <p class="col-10 col-md-12 text-center z-ind" data-aos="zoom-in" data-aos-duration="1300">Contamos con
-                    profesionales expertos en todas las areas tecnológicas.</p>
-                <div class="col-10 col-lg-8 mt-3 mt-md-5 mt-xl-5 cardservicio border z-ind" data-aos="fade-right"
-                    data-aos-duration="1300">
-                    <p class="card-body m-3">Ofrecemos un servicio de <strong>DESARROLLO WEB</strong> personalizado que
-                        se adapta a las
-                        necesidades de tu empresa. Ya sea que necesites una tienda en línea, una página web corporativa
-                        o una aplicación móvil, nuestro equipo de desarrolladores expertos se encargará de todo el
-                        proceso para ti.
-
-                        Nos especializamos en desarrollar soluciones de tecnología innovadoras que te ayudarán a
-                        optimizar tus procesos, aumentar tus ventas y mejorar la experiencia de tus usuarios. Utilizamos
-                        las últimas tecnologías y metodologías para garantizar que tu proyecto sea escalable, seguro y
-                        fácil de usar.</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center justify-content-md-end justify-content-lg-end" data-aos="fade-left"
-                data-aos-duration="1300">
-                <div class="col-10 col-lg-8 cardservicio mt-5 border ">
-                    <p class="card-body m-3">Nuestro enfoque se basa en entender tus objetivos y necesidades específicas
-                        para desarrollar una estrategia de marketing efectiva. Utilizamos una amplia variedad de
-                        técnicas y herramientas para ayudarte a llegar a tu público objetivo y aumentar la visibilidad
-                        de tu marca.
-
-                        Si buscas un servicio de <strong>MARKETING DIGITAL</strong> que te ayude a aumentar tu presencia
-                        en
-                        línea y a llegar a tu público objetivo, ¡no busques más! Contáctanos hoy para obtener más
-                        información sobre cómo podemos ayudarte a lograr tus objetivos de negocio. ¡Estamos ansiosos por
-                        trabajar contigo!</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center justify-content-md-start justify-content-lg-start">
-                <div class="cardservicio col-10 col-lg-8 my-5 border" data-aos="fade-right" data-aos-duration="1300">
-                    <p class="card-body m-3">¿Deseas que tu producto destaque y sea fácil de usar para tus clientes? Si
-                        es así, ¡estas en el lugar correcto!<br>
-
-                        Nuestro servidio de <strong>DISEÑO UX/UI</strong> a medida te ayudará a crear una experiencia de
-                        usuario
-                        excepcional para tus clientes. Trabajamos con usted desde el inicio hasta el final del proceso
-                        de diseño para asegurarnos de que el resultado final cumpla con sus necesidades y objetivos
-                        comerciales.</p>
-                </div>
+        <div class="container container-servicios">
+            <div class="row justify-content-center mt-3">
+                <h2 class="col-10 text-start text-lg-center my-0 my-md-5" data-aos="fade-rigth"
+                    data-aos-duration="1300">¿QUÉ SERVICIOS OFRECEMOS?</h2>
+                <div class="flex justify-content-center mt-0 mt-lg-5" id="serviciosTodos" data-aos="fade-up"
+                    data-aos-duration="1000"> </div>
             </div>
         </div>
 
     </section>
 
+    <section>
+        <div class="container justify-content-center">
+            <div class="row">
+                <h2 class="title m-2 mb-5">Todos los productos</h2>
+                <div class="contenedor-servicios col-12 mb-5">
+                    <div class="servicio col-3 border">
+                        <img src="../img/servicio-desarrollo01.png" class="imagen-servicio mt-3" alt="">
+                        <div class="servicio">
+                            <h3 class="servicio">Desarrollo 01</h3>
+                            <p class="servicio-plan">texto</p>
+                            <p class="servicio-precio">precio</p>
+                            <button class="col-10 servicio-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="servicio col-3 border">
+                        <img src="../img/servicio-desarrollo01.png" class="imagen-servicio mt-3" alt="">
+                        <div class="servicio">
+                            <h3 class="servicio">Desarrollo 02</h3>
+                            <p class="servicio-plan">texto</p>
+                            <p class="servicio-precio">precio</p>
+                            <button class="col-10 servicio-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="servicio col-3 border">
+                        <img src="../img/servicio-desarrollo01.png" class="imagen-servicio mt-3" alt="">
+                        <div class="servicio">
+                            <h3 class="servicio">Desarrollo 03</h3>
+                            <p class="servicio-plan">texto</p>
+                            <p class="servicio-precio">precio</p>
+                            <button class="col-10 servicio-agregar">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="servicio col-3 border">
+                        <img src="../img/servicio-desarrollo01.png" class="imagen-servicio mt-3" alt="">
+                        <div class="servicio">
+                            <h3 class="servicio">Desarrollo 04</h3>
+                            <p class="servicio-plan">texto</p>
+                            <p class="servicio-precio">precio</p>
+                            <button class="col-10 servicio-agregar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <div class="container-fluid footer mt-5 mt-lg-0 footer d-flex justify-content-center">
+
         <footer class="d-flex flex-wrap justify-content-between align-items-center my-4">
             <div class="col-12 text-center">
                 <a href="" class="mt-5"><i class="fa-brands fa-facebook iconos-footer text-link mx-3"></i></a>
@@ -118,6 +130,7 @@
                 <a href=""><i class="fa-brands fa-linkedin iconos-footer text-link mx-3"></i></a>
             </div>
         </footer>
+
     </div>
 
 
@@ -129,7 +142,13 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5706832b8a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/index.js"></script>
+
+
+
 
     <script>
         AOS.init();
