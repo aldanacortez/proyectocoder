@@ -174,7 +174,7 @@ section section form input {
   max-height: 88vh;
   color: black;
   background-color: white;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   position: fixed;
@@ -207,4 +207,140 @@ section section form input {
   margin-left: 10%;
 }
 
+
+/* SERVICIOS */
+
+/* .contenedor-servicios {
+  grid-template-columns: repeat (4, 1fr) !important; */
+  /* display: flex;
+} */
+
+.servicio {
+  text-align: center;
+  /* background-color: #D6B6F1; */
+  margin: 0.5rem;
+  padding: 1rem;
+  border: #D6B6F1;
+}
+
+.servicio-plan {
+  margin-bottom: 0px;
+}
+
+.servicio-precio {
+  margin-bottom: 20px;
+}
+
+/* .servicio-agregar {
+  width:;
+} */
+
+.imagen-servicio {
+  height: 100px;
+  border-radius: 20px;
+}
+
+/* CARRITO */
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* 
+.carrito-vacio {
+  display: none;
+}
+
+.carrito-lleno{
+  display: none;
+} */
+
+.carrito-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.carrito-servicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6b6f168;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.carrito-servicio-imagen {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.carrito-servicio-eliminar {
+  background-color: transparent;
+  color: rgb(59, 50, 50);
+}
+
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.carrito-acciones-vaciar {
+  border: 0;
+  background-color: rgba(35, 73, 107, 0.592);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carrito-acciones-right {
+  display: flex;
+}
+
+.carrito-acciones-total {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.carrito-acciones-comprar {
+  border: 0;
+  background-color: rgb(35, 73, 107);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.disabled {
+  display: none;
+}
+
+.cantidad-carrito {
+  font-weight: 400;
+}
+
+.mb-texto-index {
+  margin-bottom: 10rem;
+}
+
+.titulo-prin {
+  text-align: left !important;
+}
+
+.carrito.servicio.titulo {
+  text-align: left !important;
+}
 /*# sourceMappingURL=style.css.map */
