@@ -51,14 +51,15 @@
                 </ul>
             </nav>
             <ul>
-                <a id="carrito" class="fa-solid fa-cart-shopping iconos-footer mx-3 no-deco text-light">
-                    <span class="cantidad">0</span>
+                <a class="fa-solid fa-cart-shopping iconos-footer mx-3 no-deco text-light">
+                    <span class="cantidad-carrito">0</span>
                 </a>
             </ul>
         </div>
 
     </header>
 
+    <!-- CATEGORIAS SERVICIOS -->
     <section>
 
         <div class="container">
@@ -108,10 +109,11 @@
 
     </section>
 
+
+    <!-- SERVICIOS -->
     <section>
         <div class="container justify-content-center">
             <div class="row">
-                <!-- <h2 class="title m-2 mb-5">Elegí el plan que se adapte a tus necesidades</h2> -->
                 <div id="contenedor-servicios" class="contenedor-servicios col-12 mb-5">
                     <!-- JS -->
                 </div>
@@ -119,9 +121,39 @@
         </div>
     </section>
 
-    <div id="modal-container" class="modal-container">
-        <!-- <p id="carrito vacio"> el carrito esta vacio </p> -->
+
+    <!-- MODAL CARRITO -->
+
+    <div class="modal-container" style="display: none;">
+
+        <h2 id="carrito" class="titulo-principal mt-2 mx-4">Carrito</h2>
+        <div class="contenedor-carrito">
+            <p id="contenedorCarritoVacio" class="carrito-vacio mx-5">Tu carrito está vacío <i class="fa-regular fa-face-sad-cry"></i></p>
+
+            <div id="contenedorCarritoServicios" class="carrito-servicios disabled">
+                <!-- JS -->
+            </div>
+
+            <div id="contenedorCarritoAcciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-left">
+                    <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                </div>
+                <div class="carrito-acciones-right">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">$100000</p>
+                    </div>
+                    <button class="carrito-acciones-comprar">Comprar</button>
+                </div>
+            </div>
+
+            <p id="contenedorCarritoComprado" class="carrito-lleno mx-5 disabled">¡Muchas gracias por tu compra! <i
+                    class="fa-regular fa-face-smile"></i></p>
+
+
+        </div>
     </div>
+
 
     <!-- FOOTER -->
     <div class="container-fluid footer mt-5 mt-lg-0 footer d-flex justify-content-center">
@@ -149,7 +181,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/categorias.js"></script>
     <script src="/js/index.js"></script>
-    <script src="/js/categorias.js"></script>
+    <script src="/js/carrito.js"></script>
 
 
 

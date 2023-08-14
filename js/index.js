@@ -25,7 +25,7 @@
 // });
 
 const servicios = [
-  // DESARROLLO
+  // SERVICIO DE DESARROLLO
   {
     id: "desarrollo 1",
     titulo: "One Page",
@@ -82,7 +82,7 @@ const servicios = [
     precio: 90000,
   },
 
-  // MARKETING
+  // SERVICIO DE MARKETING
   {
     id: "marketing 1",
     titulo: "Community Manager",
@@ -106,7 +106,7 @@ const servicios = [
     precio: 30000,
   },
 
-  // DESIGN
+  // SERVICIO DE DISEÑO
   {
     id: "design 1",
     titulo: "Logo",
@@ -131,10 +131,10 @@ const servicios = [
   },
 ];
 
-
 const contenedorServicios = document.querySelector("#contenedor-servicios");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".servicio-agregar");
+const cantidadCarrito = document.querySelector(".cantidad-carrito");
 
 // CONTENEDOR SERVICIOS
 function cargarServicios(serviciosSeleccionados) {
@@ -153,16 +153,14 @@ function cargarServicios(serviciosSeleccionados) {
 `;
 
     contenedorServicios.append(div);
-  })
+  });
   // actualizarBotonesAgregar();
   // console.log(botonesAgregar);
 }
 
 // FIN CONTENEDOR SERVICIOS
 
-
-
-// CARGA SERVICIOS
+// CARGA DE SERVICIOS
 botonesCategorias.forEach((boton) => {
   boton.addEventListener("click", (e) => {
     botonesCategorias.forEach((boton) => boton.classList.remove("active"));
@@ -177,32 +175,46 @@ botonesCategorias.forEach((boton) => {
   });
 });
 
-// FIN CARGA SERVICIOS
+// FIN CARGA DE SERVICIOS
 
-
-// AGREGAR SERVICIO CARRITO
-function actualizarBotonesAgregar () {
+// AGREGAR SERVICIO A CARRITO
+function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll(".servicio-agregar");
 
-  botonesAgregar.forEach(boton => {
+  botonesAgregar.forEach((boton) => {
     boton.addEventListener("click", agregarAlCarrito);
   });
 }
 
 const serviciosEnCarrito = [];
 
-function agregarAlCarrito (e) {
-const idBoton = e.currentTarget.id;
-const servicioAgregado = servicios.find(servicio => servicio.id === idBoton);
+function agregarAlCarrito(e) {
+  const idBoton = e.currentTarget.id;
+  const servicioAgregado = servicios.find(
+    (servicio) => servicio.id === idBoton
+  );
 
-if(serviciosEnCarrito.some(servicio => servicio.id === idBoton)) {
-const index = serviciosEnCarrito.findIndex(servicio => servicio.id === idBoton);
-serviciosEnCarrito[index].cantidad++;
-} else {
-  servicioAgregado.cantidad = 1;
-  serviciosEnCarrito.push(servicioAgregado);
+  if (serviciosEnCarrito.some((servicio) => servicio.id === idBoton)) {
+    const index = serviciosEnCarrito.findIndex(
+      (servicio) => servicio.id === idBoton
+    );
+    serviciosEnCarrito[index].cantidad++;
+  } else {
+    servicioAgregado.cantidad = 1;
+    serviciosEnCarrito.push(servicioAgregado);
+  }
+  actualizarCantidad();
+
+  localStorage.setItem("servicios-en-carrito", JSON.stringify(serviciosEnCarrito)
+  );
 }
 
-console.log(serviciosEnCarrito);
-
+function actualizarCantidad() {
+  let nuevaCantidad = serviciosEnCarrito.reduce(
+    (acc, servicio) => acc + servicio.cantidad,
+    0
+  );
+  cantidadCarrito.innerText = nuevaCantidad;
 }
+
+// FIN AGREGAR SERVICIO A CARRITO

@@ -174,7 +174,7 @@ section section form input {
   max-height: 88vh;
   color: black;
   background-color: white;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   position: fixed;
@@ -324,7 +324,7 @@ section section form input {
   display: none;
 }
 
-.cantidad {
+.cantidad-carrito {
   font-weight: 400;
 }
 
