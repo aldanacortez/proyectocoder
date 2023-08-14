@@ -1,4 +1,5 @@
 const cantidadCarritox = document.querySelector(".cantidad-carrito");
+const totalCarrito = document.querySelector("#total");
 let serviciosEnCarritoX = JSON.parse(
   localStorage.getItem("servicios-en-carrito")
 );
@@ -11,10 +12,13 @@ let botonesEliminar = document.querySelectorAll(".carrito-servicio-eliminar");
 
 function actualizarCantidad() {
   let cantidad = 0;
+  let total= 0;
   serviciosEnCarritoX.forEach((element) => {
     cantidad += element.cantidad;
+    total += element.precio;
   });
   cantidadCarrito.innerHTML = cantidad;
+  totalCarrito.innerHTML = "$ "+ total;
 }
 
 function cargarServiciosCarrito() {

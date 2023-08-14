@@ -142,6 +142,8 @@ function cargarServicios(serviciosSeleccionados) {
   serviciosSeleccionados.forEach((servicio) => {
     const div = document.createElement("div");
     div.classList.add("servicio");
+    div.classList.add("border");
+    div.classList.add("mb-5");
     div.innerHTML = `
     <img src="${servicio.img}" class="imagen-servicio mt-3" alt="">
     <div class="servicio">
@@ -186,7 +188,9 @@ function actualizarBotonesAgregar() {
   });
 }
 
-const serviciosEnCarrito = [];
+const serviciosEnCarrito = JSON.parse(
+  localStorage.getItem("servicios-en-carrito")
+);
 
 function agregarAlCarrito(e) {
   const idBoton = e.currentTarget.id;
@@ -211,12 +215,14 @@ function agregarAlCarrito(e) {
   );
 }
 
+// FIN AGREGAR SERVICIO A CARRITO
+
 function actualizarCantidad() {
-  let nuevaCantidad = serviciosEnCarrito.reduce(
-    (acc, servicio) => acc + servicio.cantidad,
-    0
-  );
-  cantidadCarrito.innerText = nuevaCantidad;
+  let cantidad = 0;
+  serviciosEnCarrito.forEach((element) => {
+    cantidad += element.cantidad;
+  });
+  cantidadCarrito.innerHTML = cantidad;
 }
 
-// FIN AGREGAR SERVICIO A CARRITO
+actualizarCantidad()

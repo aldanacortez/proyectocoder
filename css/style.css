@@ -220,6 +220,7 @@ section section form input {
   /* background-color: #D6B6F1; */
   margin: 0.5rem;
   padding: 1rem;
+  border: #D6B6F1;
 }
 
 .servicio-plan {
