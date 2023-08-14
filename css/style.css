@@ -210,10 +210,10 @@ section section form input {
 
 /* SERVICIOS */
 
-.contenedor-servicios {
-  display: flex;
-  grid-template-columns: repeat (4, 1fr) !important;
-}
+/* .contenedor-servicios {
+  grid-template-columns: repeat (4, 1fr) !important; */
+  /* display: flex;
+} */
 
 .servicio {
   text-align: center;
@@ -326,6 +326,14 @@ section section form input {
 
 .cantidad {
   font-weight: 400;
+}
+
+.mb-texto-index {
+  margin-bottom: 10rem;
+}
+
+.titulo-prin {
+  text-align: left !important;
 }
 
 /*# sourceMappingURL=style.css.map */
