@@ -265,7 +265,7 @@ section section form input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D6B6F1;
+  background-color: #d6b6f168;
   padding: 1rem;
   border-radius: 1rem;
   height: auto;
@@ -273,7 +273,7 @@ section section form input {
   margin-right: 1rem;
 }
 
-.carrito-servicios-imagen {
+.carrito-servicio-imagen {
   width: 4rem;
   border-radius: 1rem;
 }
@@ -297,6 +297,8 @@ section section form input {
   padding-right: 1rem;
   border-radius: 1rem;
   cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .carrito-acciones-right {
@@ -317,7 +319,8 @@ section section form input {
   padding-right: 1rem;
   border-radius: 1rem;
   cursor: pointer;
-   
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .disabled {
@@ -336,4 +339,7 @@ section section form input {
   text-align: left !important;
 }
 
+.carrito.servicio.titulo {
+  text-align: left !important;
+}
 /*# sourceMappingURL=style.css.map */

@@ -205,7 +205,9 @@ function agregarAlCarrito(e) {
   }
   actualizarCantidad();
 
-  localStorage.setItem("servicios-en-carrito", JSON.stringify(serviciosEnCarrito)
+  localStorage.setItem(
+    "servicios-en-carrito",
+    JSON.stringify(serviciosEnCarrito)
   );
 }
 
