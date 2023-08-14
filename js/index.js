@@ -29,7 +29,7 @@ const servicios = [
   {
     id: "desarrollo 1",
     titulo: "One Page",
-    texto: "Plan LoremIpsum",
+    texto: "Potenciamos tu presencia en línea con un diseño elegante y contenido envolvente, todo en una sola página. Simplifica y potencia tu presencia web con nuestra solución OnePage.",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Desarrollo",
@@ -40,7 +40,7 @@ const servicios = [
   {
     id: "desarrollo 2",
     titulo: "Static Page",
-    texto: "Plan LoremIpsum",
+    texto: "Enfocados en tu esencia, creamos una plataforma que destaca tu mensaje de manera clara y directa. Olvídate de lo complicado y abraza lo impactante con una página que capta la esencia de tu negocio en cada detalle",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Desarrollo",
@@ -51,7 +51,7 @@ const servicios = [
   {
     id: "desarrollo 3",
     titulo: "Institucional Page",
-    texto: "Plan LoremIpsum",
+    texto: "Presenta la esencia de tu institución al mundo con nuestra destacada oferta de desarrollo web para páginas institucionales. Creamos un espacio en línea que refleja tus valores, misión y logros de manera impactante. ",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Desarrollo",
@@ -62,7 +62,7 @@ const servicios = [
   {
     id: "desarrollo 4",
     titulo: "Ecommerce",
-    texto: "Plan LoremIpsum",
+    texto: "Abre las puertas de tu tienda al mundo digital con nuestro servicio de desarrollo web especializado en páginas de comercio electrónico. Creamos una experiencia de compra en línea envolvente y segura, donde cada clic es un paso hacia la satisfacción del cliente",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Desarrollo",
@@ -73,7 +73,7 @@ const servicios = [
   {
     id: "desarrollo 5",
     titulo: "ORM",
-    texto: "Plan LoremIpsum",
+    texto: "Potencia tu control y eficiencia en línea con nuestro servicio de desarrollo web que ofrece un Sistema ORM integrado. Domina la gestión de tu reputación en línea, desde la monitorización de menciones hasta la respuesta ágil a comentarios.",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Desarrollo",
@@ -86,7 +86,7 @@ const servicios = [
   {
     id: "marketing 1",
     titulo: "Community Manager",
-    texto: "Plan LoremIpsum",
+    texto: "Nuestro equipo apasionado se encargará de construir relaciones sólidas con tu audiencia, gestionar comentarios con empatía y crear contenido que genere impacto.",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Marketing",
@@ -97,7 +97,7 @@ const servicios = [
   {
     id: "marketing 2",
     titulo: "Social Media",
-    texto: "Plan LoremIpsum",
+    texto: "Impulsa tu presencia en línea, aumenta el compromiso y convierte seguidores en leales defensores de tu marca. Descubre el poder de las redes sociales con nosotros y lleva tu negocio al siguiente nivel.",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Marketing",
@@ -110,7 +110,7 @@ const servicios = [
   {
     id: "design 1",
     titulo: "Logo",
-    texto: "Plan LoremIpsum",
+    texto: "Captura la identidad de tu marca en un símbolo distintivo con nuestro servicio de diseño de logo. Nuestro talentoso equipo crea logotipos que comunican tu esencia y valores de manera impactante",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Design",
@@ -121,7 +121,7 @@ const servicios = [
   {
     id: "design 2",
     titulo: "Flyer",
-    texto: "Plan LoremIpsum",
+    texto: "Deja una impresión duradera y lleva tu mensaje a nuevas alturas con nuestro servicio de diseño de flyers. Nuestro equipo creativo da vida a tus ideas, combinando diseño cautivador y contenido relevante",
     img: "../img/servicio-desarrollo01.png",
     categoria: {
       nombre: "Design",
@@ -149,7 +149,7 @@ function cargarServicios(serviciosSeleccionados) {
     <div class="servicio">
         <h3 class="servicio">${servicio.titulo}</h3>
         <p class="servicio-plan">${servicio.texto}</p>
-        <p class="servicio-precio">${servicio.precio}</p>
+        <p class="servicio-precio display-6 mt-3">$${servicio.precio}</p>
         <button class="col-10 servicio-agregar" id="${servicio.id}">Agregar</button>
     </div>
 `;
@@ -213,6 +213,15 @@ function agregarAlCarrito(e) {
     "servicios-en-carrito",
     JSON.stringify(serviciosEnCarrito)
   );
+
+  Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Servicio agregado a carrito',
+  showConfirmButton: false,
+  timer: 1500
+})
+
 }
 
 // FIN AGREGAR SERVICIO A CARRITO
