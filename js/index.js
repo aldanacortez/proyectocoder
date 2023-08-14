@@ -87,7 +87,7 @@ const servicios = [
     id: "marketing 1",
     titulo: "Community Manager",
     texto: "Nuestro equipo apasionado se encargará de construir relaciones sólidas con tu audiencia, gestionar comentarios con empatía y crear contenido que genere impacto.",
-    img: "../img/servicio-desarrollo01.png",
+    img: "../img/servicio-social01.png",
     categoria: {
       nombre: "Marketing",
       id: "marketing",
@@ -98,7 +98,7 @@ const servicios = [
     id: "marketing 2",
     titulo: "Social Media",
     texto: "Impulsa tu presencia en línea, aumenta el compromiso y convierte seguidores en leales defensores de tu marca. Descubre el poder de las redes sociales con nosotros y lleva tu negocio al siguiente nivel.",
-    img: "../img/servicio-desarrollo01.png",
+    img: "../img/servicio-social01.png",
     categoria: {
       nombre: "Marketing",
       id: "marketing",
@@ -111,7 +111,7 @@ const servicios = [
     id: "design 1",
     titulo: "Logo",
     texto: "Captura la identidad de tu marca en un símbolo distintivo con nuestro servicio de diseño de logo. Nuestro talentoso equipo crea logotipos que comunican tu esencia y valores de manera impactante",
-    img: "../img/servicio-desarrollo01.png",
+    img: "../img/servicio-design01.png",
     categoria: {
       nombre: "Design",
       id: "design",
@@ -122,7 +122,7 @@ const servicios = [
     id: "design 2",
     titulo: "Flyer",
     texto: "Deja una impresión duradera y lleva tu mensaje a nuevas alturas con nuestro servicio de diseño de flyers. Nuestro equipo creativo da vida a tus ideas, combinando diseño cautivador y contenido relevante",
-    img: "../img/servicio-desarrollo01.png",
+    img: "../img/servicio-design01.png",
     categoria: {
       nombre: "Design",
       id: "design",

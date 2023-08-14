@@ -9,6 +9,7 @@ const contenedorCarritoServicios = document.querySelector(".carrito-servicios");
 const contenedorCarritoAcciones = document.querySelector(".carrito-acciones");
 const contenedorCarritoComprado = document.querySelector(".carrito-lleno");
 let botonesEliminar = document.querySelectorAll(".carrito-servicio-eliminar");
+const botonComprar = document.querySelector(".carrito-acciones-comprar");
 
 function actualizarCantidad() {
   let cantidad = 0;
@@ -84,3 +85,17 @@ function eliminarDelCarrito(elem) {
   );
     location.reload()
 }
+
+botonComprar.addEventListener("click", comprarCarrito);
+function comprarCarrito() {
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: '¡Muchas gracias por tu compra!',
+    showConfirmButton: false,
+    timer: 1500
+  })
+
+}
+
+// const serviciosEnCarrito = [];
