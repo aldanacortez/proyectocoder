@@ -188,9 +188,10 @@ function actualizarBotonesAgregar() {
   });
 }
 
-const serviciosEnCarrito = JSON.parse(
-  localStorage.getItem("servicios-en-carrito")
-);
+let serviciosEnCarrito = []
+if (localStorage.key("servicios-en-carrito")){
+  serviciosEnCarrito = JSON.parse(localStorage.getItem("servicios-en-carrito"));
+}
 
 function agregarAlCarrito(e) {
   const idBoton = e.currentTarget.id;

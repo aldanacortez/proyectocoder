@@ -1,8 +1,9 @@
 const cantidadCarritox = document.querySelector(".cantidad-carrito");
 const totalCarrito = document.querySelector("#total");
-let serviciosEnCarritoX = JSON.parse(
-  localStorage.getItem("servicios-en-carrito")
-);
+let serviciosEnCarritoX = []
+if (localStorage.key("servicios-en-carrito")){
+  serviciosEnCarritoX = JSON.parse(localStorage.getItem("servicios-en-carrito"));
+}
 
 const contenedorCarritoVacio = document.querySelector(".carrito-vacio");
 const contenedorCarritoServicios = document.querySelector(".carrito-servicios");
@@ -94,7 +95,13 @@ function comprarCarrito() {
     title: '¡Muchas gracias por tu compra!',
     showConfirmButton: false,
     timer: 1500
-  })
+  }).then((result) => {
+    localStorage.setItem("servicios-en-carrito", [])
+    
+    location.href = "/"
+  }).catch((err) => {
+    
+  });
 
 }
 
